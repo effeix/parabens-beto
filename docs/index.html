@@ -4,7 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parabéns Beto!</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS to center the div */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .centered-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* CSS for color animation */
+        @keyframes colorChange {
+            0% { color: #ff0000; }
+            6.25% { color: #ff7f00; }
+            12.5% { color: #ffff00; }
+            18.75% { color: #7fff00; }
+            25% { color: #00ff00; }
+            31.25% { color: #00ff7f; }
+            37.5% { color: #00ffff; }
+            43.75% { color: #007fff; }
+            50% { color: #0000ff; }
+            56.25% { color: #7f00ff; }
+            62.5% { color: #ff00ff; }
+            68.75% { color: #ff007f; }
+            75% { color: #ff0000; }
+            81.25% { color: #ff7f00; }
+            87.5% { color: #ffff00; }
+            93.75% { color: #7fff00; }
+            100% { color: #00ff00; }
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: colorChange 10s infinite;
+        }
+    </style>
 </head>
 <body>
     <div class="centered-div">

@@ -13,13 +13,14 @@
             justify-content: center;
             align-items: center;
             background-color: #f0f0f0;
+            flex-direction: column;
         }
 
         .centered-div {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            flex-direction: column;
         }
 
         /* CSS for color animation */
@@ -46,12 +47,20 @@
         h1 {
             font-size: 3em;
             animation: colorChange 10s infinite;
+            margin: 0;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="centered-div">
         <h1>Parabéns Beto!</h1>
+        <img src="assets/beto.jpeg" alt="Celebration Image">
     </div>
 </body>
 </html>
